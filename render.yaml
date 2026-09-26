@@ -1,0 +1,20 @@
+# Render Blueprint — Research Radar
+# Ein Web-Service: Express liefert API und gebautes Frontend aus.
+# Die Secrets (MGA_API_KEY, APP_PASSWORD) werden im Render-Dashboard gesetzt,
+# NICHT hier und nicht im Repo.
+services:
+  - type: web
+    name: research-radar
+    runtime: node
+    plan: free
+    buildCommand: npm ci --prefix backend && npm ci --prefix frontend && npm run build --prefix frontend
+    startCommand: node backend/server.js
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: MGA_MODEL
+        value: claude-opus-5
+      - key: MGA_API_KEY
+        sync: false
+      - key: APP_PASSWORD
+        sync: false
