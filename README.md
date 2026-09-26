@@ -1,10 +1,14 @@
-# Research Radar
+# Research Radar — Belege und Foliensatz
 
 Prototyp aus dem Mini-Hackathon beim Ophthalmologen-Kongress (25.–26.09.2026).
 
 Recherche-Werkzeug für ophthalmologische Update-Referate: PubMed-Suche, Volltext-Belege
 mit Sprung zur Belegstelle, KI-gestützte Gliederung und eine fertige PPTX-Datei.
 Jede Aussage bleibt gegen den Volltext überprüfbar.
+
+> Parallel dazu gibt es eine anders ausgerichtete Fassung:
+> [research-radar-v1](https://github.com/NiclasBayer/research-radar-v1) — dort steht
+> das Sammeln in einem Datenpool im Vordergrund statt der Volltext-Belege.
 
 ## Aufbau
 
